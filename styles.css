@@ -1,0 +1,461 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+}
+
+header {
+    background: #333; 
+    color: #fff; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+/* Hero Section */
+#hero {
+    background-color: #0056b3; 
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 50px 20px; 
+}
+
+#hero h1 {
+    font-size: 2.5em; 
+}
+
+#hero p {
+    font-size: 1.2em; 
+}
+
+#hero button {
+    background-color: #ffcc00; 
+    color: #333; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 1em; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+#hero button:hover {
+    background-color: #ffc107; 
+}
+
+#contact {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 30px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+#contact h2, #contact p {
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact button {
+    background-color: #18BC9C; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: inline-block; 
+}
+
+#contact button:hover {
+    background-color: #16A085; 
+}
+
+
+/* About Section */
+.about-home {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.about-home h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2C3E50; 
+}
+
+.about-home p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #34495E; 
+}
+
+/* Button Styling */
+.about-home a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #18BC9C; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-home a:hover {
+    background-color: #16a085; 
+}
+
+.about-section {
+    padding: 50px;
+    background: linear-gradient(135deg, #f4f7f6, #dfe7e4);
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.about-info {
+    padding: 20px;
+    background-color: #1872bc; 
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-info:hover {
+    transform: translateY(-5px); 
+}
+
+.equipment-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.equipment-list li {
+    margin-bottom: 10px;
+    font-weight: 500; 
+}
+
+/* Commitment Section */
+.commitment-section, .testimonial-section, .gallery-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Table Styling */
+.table-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.table-section div {
+    background-color: #34495E; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.table-section div h3 {
+    color: #18BC9C; 
+    margin-bottom: 15px;
+}
+
+.table-section div p {
+    font-size: 16px;
+    color: white; 
+}
+
+/* Gallery Styling */
+.gallery-section .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Section */
+#featured-services {
+    text-align: center; 
+}
+
+#services {
+    padding: 40px 20px; 
+    background: #e7f3fe; 
+    text-align: center; 
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.service {
+    background: #fff; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding: 20px; 
+    margin: 15px; 
+    width: 250px; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+.service:hover {
+    transform: scale(1.05); 
+}
+
+.service-image {
+    max-width: 100%; 
+    height: auto; 
+        margin-bottom: 15px; 
+}
+
+.service h3 {
+    color: #0056b3; 
+}
+
+.service a {
+    display: inline-block; 
+    margin-top: 10px; 
+    color: #0056b3; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+/* Overview Section Styles */
+#overview {
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+#overview h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#overview p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#overview h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#overview .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#overview .btn:hover {
+    background-color: #0056b3;
+}
+
+#testimonials {
+    max-width: 800px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    background: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.testimonial {
+    margin: 20px 0; 
+}
+
+blockquote {
+    font-style: italic; 
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9; /* Light gray background instead of white */
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2, #contact h3 {
+    color: #2C3E50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #7F8C8D;
+}
+
+/* Form Styling */
+form#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2C3E50;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #18BC9C;
+    box-shadow: 0 0 5px rgba(24, 188, 156, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button Styling */
+button.primary-btn {
+    background-color: #3498db; /* Blue background for primary button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button.primary-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button.primary-btn:active {
+    transform: translateY(0); /* Reset lift effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
+/* Confirmation Message */
+#confirmationMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #18BC9C;
+}
+
+/* Contact Information Styling */
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    font-size: 16px;
+    color: #7F8C8D;
+    margin-bottom: 10px;
+}
+
+#contact ul li a {
+    color: #68a0f4;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}

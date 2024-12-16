@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - SHREE SAI EARTHMOVERS AND TRANSPORT BUSINESS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header nav {
+            background-color: #2C3E50;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav ul li a:hover {
+            color: #18BC9C;
+        }
+
+        section {
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #18BC9C;
+            outline: none;
+            box-shadow: 0 0 5px rgba(24, 188, 156, 0.5);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #18BC9C;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #16A085;
+        }
+
+        .faq {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq h3 {
+            margin-bottom: 10px;
+            color: #2C3E50;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h3 {
+            margin-bottom: 10px;
+            color: #2C3E50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="help">
+        <h2>Help & Support</h2>
+
+        <!-- Form for Specific Inquiries -->
+        <form>
+            <label for="need">What do you need help with?</label>
+            <input type="text" id="need" name="need" placeholder="Enter your inquiry" required>
+
+            <label for="serviceType">Select Service:</label>
+            <select id="serviceType" name="serviceType" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="earthmoving">Earthmoving</option>
+                <option value="transport">Transport</option>
+                <option value="craneRental">Crane Rental</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="workingHours">Working Hours (if applicable):</label>
+            <input type="number" id="workingHours" name="workingHours" placeholder="e.g., 5 hours" min="1" max="24">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe your issue or inquiry..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+        <h3>Frequently Asked Questions (FAQ)</h3>
+        <p><strong>Q1: What services do you provide?</strong></p>
+        <p>A1: We offer earthmoving, transport, and crane rental services to meet your business needs.</p>
+    </div>
+
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>If you still need help, feel free to contact us directly at:</p>
+        <p>Email: <a href="mailto:shreesaiearthmovers9798@gmail.com">shreesaiearthmovers9798@gmail.com</a></p>
+        <p>Phone: +91-123-456-7890</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("form");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                const need = document.getElementById("need").value;
+                const serviceType = document.getElementById("serviceType").value;
+                const workingHours = document.getElementById("workingHours").value;
+                const message = document.getElementById("message").value;
+
+                if (!need || !message) {
+                    alert("Please fill in all required fields.");
+                    return;
+                }
+
+                console.log("Form Submitted:");
+                console.log("Need: ", need);
+                console.log("Service Type: ", serviceType);
+                console.log("Working Hours: ", workingHours);
+                console.log("Message: ", message);
+
+                alert("Your inquiry has been submitted successfully!");
+                form.reset();
+            });
+        });
+    </script>
+</body>
+</html>

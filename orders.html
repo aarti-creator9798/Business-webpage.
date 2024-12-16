@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders - SHREE SAI EARTHMOVERS AND TRANSPORT BUSINESS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section#orders {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .btn {
+            background-color: #2196F3;
+        }
+
+        .btn:hover {
+            background-color: #0b7dda;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="orders">
+        <h1>Orders</h1>
+        <p>Here you can manage all current and past orders for SHREE SAI EARTHMOVERS AND TRANSPORT BUSINESS.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Client Name</th>
+                    <th>Service Type</th>
+                    <th>Status</th>
+                    <th>Deadline</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>krishna Gawande</td>
+                    <td>Crane Rental</td>
+                    <td style="color: orange;">In Progress</td>
+                    <td>25 Oct 2024</td>
+                    <td><button>View Details</button></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Jana patil</td>
+                    <td>Transport Service</td>
+                    <td style="color: green;">Completed</td>
+                    <td>10 Oct 2024</td>
+                    <td><button>View Details</button></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+
+        <button class="btn">Create New Order</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SHREE SAI EARTHMOVERS AND TRANSPORT BUSINESS. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

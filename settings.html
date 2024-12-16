@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - SHREE SAI EARTHMOVERS AND TRANSPORT BUSINESS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: #18bc9c;
+        }
+
+        section#settings {
+            padding: 30px;
+            background-color: #fff;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="settings">
+        <h1>Settings</h1>
+        <p>Configure the preferences, security, and operational settings of SHREE SAI EARTHMOVERS AND TRANSPORT BUSINESS.</p>
+        
+        <form>
+            <!-- Service Preferences -->
+            <h2>Service Preferences</h2>
+            <label for="servicePref">Preferred Service Type:</label>
+            <select id="servicePref" name="servicePref">
+                <option value="earthmoving">Earthmoving</option>
+                <option value="transport">Transport</option>
+                <option value="craneRental">Crane Rental</option>
+            </select>
+
+            <!-- Notification Settings -->
+            <h2>Notification Settings</h2>
+            <label for="emailNotify">Receive Email Notifications:</label>
+            <select id="emailNotify" name="emailNotify">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="smsNotify">Receive SMS Notifications:</label>
+            <select id="smsNotify" name="smsNotify">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <!-- Payment Settings -->
+            <h2>Payment Settings</h2>
+            <label for="paymentMethod">Preferred Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="bankTransfer">Bank Transfer</option>
+                <option value="creditCard">Credit Card</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+
+            <label for="autoBilling">Enable Auto-Billing:</label>
+            <select id="autoBilling" name="autoBilling">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <!-- Account Security -->
+            <h2>Account Security</h2>
+            <label for="changePassword">Change Password:</label>
+            <input type="password" id="changePassword" name="changePassword" placeholder="Enter new password">
+
+            <label for="twoFactorAuth">Enable Two-Factor Authentication:</label>
+            <select id="twoFactorAuth" name="twoFactorAuth">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit" class="btn">Save Changes</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SHREE SAI EARTHMOVERS AND TRANSPORT BUSINESS. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
